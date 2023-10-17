@@ -1,34 +1,26 @@
-header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    margin: 5%;
+  
+    @media screen and (min-width: $breakpoint-desktop) {
+      margin: 40px 100px 49px 100px;
     }
-}
-
-//DESKTOP AND TABLET
-@media screen and (min-width: 425px) {
-    .header--container{
-        &--img{
-            width: 12vw;
-        }
+  
+    &__fig {
+      display: flex;
+      align-items: flex-start;
+      margin: 0;
+      width: 9rem;
+  
+      @media screen and (min-width: $breakpoint-desktop) {
+        width: 13.2rem;
+      }
+  
+      img {
+        width: 100%;
+      }
     }
-}
-
-//MOBILE
-@media screen and (max-width: 425px) {
-    header{
-        justify-content: space-around;
-    }
-    .header--container{
-        &--img{
-            width: 30vw;
-        }
-    }
-}
+  }
+  

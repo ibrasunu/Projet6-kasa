@@ -1,14 +1,14 @@
 import React from "react";
 
-function Banner(bannerUrl, content){
-    //Initialize input
-    content = bannerUrl.content
-    bannerUrl = bannerUrl.bannerUrl;
-    return(
-        <div className="Banner" style={{backgroundImage: `url(${bannerUrl})`}}>
-            <h2> {content}</h2>
-        </div>
-    )
+
+function Banniere({ image, texte }) {
+  return (
+    <div className="banner">
+      <img className="banner__img" src={image} alt="Bannière" />
+      <div className="banner__sombre"></div>
+      <span className="banner__txt">{texte}</span>
+    </div>
+  );
 }
 
-export default Banner;
+export default Banniere;

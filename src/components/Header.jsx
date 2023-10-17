@@ -1,27 +1,13 @@
-import React from "react";
-import { NavLink, Link, useLocation  } from "react-router-dom";
+import logo from "../assets/LOGO.svg";
+import Nav from "./Nav";
 
-import logo from "../assets/LOGO.png";
-
-
-function Header(){
-    const { pathname } = useLocation();
-
-    return(
-        <header>
-            <Link to="/" className="header--container">
-                <img src={logo} alt="logo" className="header--container--img"/>
-            </Link>
-            <nav>
-                <NavLink to="/" className="nav--Links" style={{textDecoration: pathname === '/' ? 'underline' : 'none'}}>
-                    Accueil
-                </NavLink>
-                <NavLink to="/about" className="nav--Links" style={{textDecoration: pathname === '/about' ? 'underline' : 'none'}}>
-                    About
-                </NavLink>
-            </nav>
-        </header>
-    )
+export default function Header() {
+  return (
+    <header className="header">
+      <figure className="header__fig">
+        <img className="logo" src={logo} alt="logo de l'agence kasa" />
+      </figure>
+      <Nav className="nav-header" />
+    </header>
+  );
 }
-
-export default Header;
