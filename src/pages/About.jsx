@@ -12,7 +12,6 @@ const About = () => {
       <Header />
       <main>
         <Banner image={imgBannerAbout} titre="" />
-
         <div className="collapse">
           <div className="collapse__dropdown">
             {CollapseData.map((item) => {
