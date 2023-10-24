@@ -20,9 +20,9 @@ const FicheLogementDisplay = () => {
   /* Équipements */
   const equipements = ficheLogement?.equipments.map((equipment, i) => {
     return (   
-        <ul key={i}>
+        <span key={i}>
             <li>{equipment}</li>
-        </ul>
+        </span>
     );
   });
 
