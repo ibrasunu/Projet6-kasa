@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Host(props) {
+const Host = (props) => {
     return (
       <>
         <span className="nom-proprietaire">{props.name}</span>

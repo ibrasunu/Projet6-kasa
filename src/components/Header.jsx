@@ -1,7 +1,7 @@
 import logo from "../assets/LOGO.svg";
 import Nav from "./Nav";
 
-export default function Header() {
+  const  Header = () => {
   return (
     <header className="header">
       <figure className="header__fig">
@@ -11,3 +11,4 @@ export default function Header() {
     </header>
   );
 }
+export default Header

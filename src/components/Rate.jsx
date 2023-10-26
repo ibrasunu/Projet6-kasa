@@ -1,9 +1,9 @@
 import React from 'react';
 import emptyStar from "../assets/startRempli.png";
-import fullStar from "../assets//startVide.png";
+import fullStar from "../assets/startVide.png";
 
 
-function Rate(props) {
+const Rate = (props) => {
       const score = props.score;
     const notes = [1, 2, 3, 4, 5];
     return (

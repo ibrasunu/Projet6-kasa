@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tag({ nom }) {
+const  Tag = ({ nom }) => {
   return (
     <div className="tag-container">
       <span className="tag-container__button">{nom}</span>

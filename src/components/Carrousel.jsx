@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function Carrousel({ slides }) {
-  /* Crée un Hook d'état */
+const Carrousel = ({ slides }) => {
+  /* Create a State Hook   */
   const [current, setCurrent] = useState(0); //I set the index of the first slide to 0
   const length = slides.length; //slide table length
 

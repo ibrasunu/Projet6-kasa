@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Card({image, title}) {
+const Card = ({image, title}) =>{
     return (
       <div className="card">
         <img src={image} alt={title} className="card_img" />
