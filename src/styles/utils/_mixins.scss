@@ -1,4 +1,4 @@
-//Les mixines
+//Mixines
 @mixin body-position {
   max-width: $wmax;
   min-width: $wmin;
@@ -70,8 +70,8 @@
   font-size: 1.5rem;
   top: 42%;
   right: 2%;
-  width: 10px;
-  height: 15px;
+  width: 20px;
+  height: 12px;
   z-index: 10;
   cursor: pointer;
   color: $tertiary-color;

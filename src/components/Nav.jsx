@@ -1,15 +1,13 @@
 import React from "react";
-import { NavLink, useLocation} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const Nav = () => {
-
-  const {pathname} = useLocation();
   return (
     <nav className="nav-header">
-      <NavLink to="/accueil" className="nav-header__nav-link-home" style={{textDecoration: pathname === '/accueil' ? 'underline' : 'none'}}>
+      <NavLink to="/" className={({isActive}) => isActive ? "nav-header__nav-link-home active" : "nav-header__nav-link-home "} >
         Accueil
       </NavLink>
-      <NavLink to="/about" className="nav-header__nav-link-about" style={{textDecoration: pathname === '/about' ? 'underline' : 'none'}}>
+      <NavLink to="/about" className={({isActive}) => isActive ? "nav-header__nav-link-about active" : "nav-header__nav-link-about "} >
         A Propos
       </NavLink>
     </nav>
